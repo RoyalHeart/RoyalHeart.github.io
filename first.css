@@ -1,50 +1,49 @@
 body {
-    background: url("JICXS.jpg");
-    color: lightblue;
-    font-family: sans-serif, Helvetica, Arial;
-    background-color: black;
+  background: url("JICXS.jpg");
+  color: lightblue;
+  font-family: sans-serif, Helvetica, Arial;
+  background-color: black;
 }
 
 header {
-    background: rgb(0, 0, 0);
-    margin: auto;
-    padding: 0px 0px 0px 0px;
-    max-width: 500px;
-    text-align: center;
+  background: rgb(0, 0, 0);
+  margin: auto;
+  padding: 0px 0px 0px 0px;
+  max-width: 500px;
+  text-align: center;
 }
 
 #navigation {
-    float: left;
-    width: 20%;
+  float: left;
+  width: 20%;
 }
 
 #navigation .selected {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 h1 {
-    outline: lightpink;
-    outline-width: 5px;
-    outline-style: groove;
-    outline-offset: 2px;
-    margin: auto;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    color: rgb(201, 48, 188);
+  outline: lightpink;
+  outline-width: 5px;
+  outline-style: groove;
+  outline-offset: 2px;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  color: rgb(201, 48, 188);
 }
 
 h2 {
-    border-color: rgb(199, 25, 25);
-    outline-offset: 10cm;
-    color: lightyellow;
+  border-color: rgb(199, 25, 25);
+  outline-offset: 10cm;
+  color: lightyellow;
 }
 
 h3 {
-    float: center;
-    color: salmon;
+  float: center;
+  color: salmon;
 }
-
 
 /* section {
   background-color: rgb(183, 173, 230);
@@ -52,115 +51,126 @@ h3 {
 } */
 
 ul {
-    list-style-type: none;
-    margin-left: 0px;
-    padding: 0px;
+  list-style-type: none;
+  margin-left: 0px;
+  padding: 0px;
 }
 
 li {
-    list-style-type: none;
-    display: block;
-    flex-direction: row;
-    margin: 0px;
-    border: red;
-    border-radius: 10px;
-    border-width: 3px;
-    border-style: solid;
+  list-style-type: none;
+  display: block;
+  flex-direction: row;
+  margin: 0px;
+  border: red;
+  border-radius: 10px;
+  border-width: 3px;
+  border-style: solid;
 }
 
 .flex-container {
-    display: inline;
-    background-color: pink;
-    border-width: 0px;
-    width: 0px;
-    margin: 0px;
+  display: inline;
+  background-color: pink;
+  border-width: 0px;
+  width: 0px;
+  margin: 0px;
 }
 
-.flex-container>div {
-    background-color: #491e1e;
-    width: 10px;
-    margin: 5px;
-    padding: 5px;
-    border-width: 0px;
-    text-align: center;
-    line-height: 50px;
-    font-size: 20px;
-    justify-content: center;
+.flex-container > div {
+  background-color: #491e1e;
+  background: none;
+  width: 10px;
+  margin: 5px;
+  padding: 5px;
+  border-width: 0px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  justify-content: center;
 }
 
 .album-content {
-    display: flex;
-    float: center;
-    flex-wrap: wrap;
-    flex-direction: space-around;
-    /* justify-content: space-evenly; */
-    /* margin: 10px;
+  display: flex;
+  float: center;
+  flex-direction: space-around;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
+  /* margin: 10px;
     padding: 10px; */
 }
 
 .info-content {
-    display: flex;
-    float: left;
-    width: auto;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  display: flex;
+  float: left;
+  width: auto;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.project-content {
+  display: flex;
+  float: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 10px;
+  padding: 10px;
 }
 
 .img-body {
-    display: flex;
-    float: center;
-    flex-direction: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  float: center;
+  flex-direction: space-around;
+  flex-wrap: wrap;
 }
 
 .video-body {
-    display: flex;
-    float: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin: 10px;
-    padding: 10px;
+  display: flex;
+  float: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 10px;
 }
 
 a:link {
-    color: blue;
+  color: blue;
 }
 
 a:visited {
-    color: red;
+  color: red;
 }
 
 a:hover {
-    color: hotpink;
-    cursor: pointer;
+  color: hotpink;
+  cursor: pointer;
 }
 
 a:active {
-    color: black;
+  color: black;
 }
 
 button {
-    background: black;
-    border: none;
-    color: white;
+  background: black;
+  border: none;
+  color: white;
 }
 
 .container {
-    width: 1200px;
-    margin: 0px auto;
+  width: 1200px;
+  margin: 0px auto;
 }
 
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(163, 23, 44, 0.692);
-    color: #6f6f6f;
-    text-align: center;
-    letter-spacing: 0.2em;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 0.8em;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(163, 23, 44, 0.692);
+  color: #6f6f6f;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8em;
 }
