@@ -98,6 +98,11 @@ li {
     padding: 10px; */
 }
 
+.album-info {
+  width: 30%;
+  height: auto;
+}
+
 .info-content {
   display: flex;
   float: left;
@@ -166,8 +171,8 @@ button {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgba(163, 23, 44, 0.692);
-  color: #6f6f6f;
+  background-color: rgba(85, 12, 23, 0.692);
+  color: #cfcccc;
   text-align: center;
   letter-spacing: 0.2em;
   text-align: center;
