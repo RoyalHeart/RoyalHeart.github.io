@@ -4,27 +4,29 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Albums</title>
-    <link rel="stylesheet" href="../first.css" />
+    <title>Media</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../quote.js"></script>
+    <script src="../responsive.js"></script>
 </head>
 
 <body>
-    <header>
-        <h1>Albums</h1>
-    </header>
     <ul>
         <div class="flex-container">
-            <div id="navigation">
-                <div><a href="../index.html">Home</a></div>
-                <div><a href="introduction.html">About me</a></div>
-                <div><a href="video.html">Videos</a></div>
-                <div><a href="image.html">Images</a></div>
-                <div><a class="selected" href="album.html">Albums</a></div>
-                <div><a href="project.html">Projects</a></div>
+            <h1>Tam</h1>
+            <div class="navigation" id="nav">
+                <a href="javascript:void(0);" class="icon" onclick="responsiveNavigation()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a class="selected" href="media.html">Media</a>
+                <a href="project.html">Projects</a>
             </div>
         </div>
     </ul>
+
     <h2>Here is my albums from Germany, Paris, etc.</h2>
     <div class="album-content">
         <div>
@@ -98,7 +100,9 @@
         </div>
     </div>
     </div>
-    <div class="footer" style="position: relative" name="randomQuote">"This is a random quote"</div>
+    <div class="footer" style="position: relative" name="randomQuote">"This is a
+        random quote"
+    </div>
 </body>
 
 </html>

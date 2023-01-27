@@ -4,7 +4,6 @@ fetch(url)
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
     let random = Math.floor(Math.random() * data.length);
     let randomQuote = data[random];
     let quote = randomQuote.text;
