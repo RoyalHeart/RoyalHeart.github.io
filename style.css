@@ -1,6 +1,7 @@
 body {
   font-family: sans-serif, Helvetica, Arial;
   background-color: rgb(20, 12, 15);
+  margin: 0 50px;
 }
 
 header {
@@ -157,6 +158,30 @@ li {
   border-style: solid;
 }
 
+.about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.about-text {
+  width: 800px;
+}
+.info-content {
+  display: flex;
+  float: left;
+  width: auto;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.porfolio-img {
+  width: 25%;
+  height: auto;
+  border-radius: 10%;
+}
 .album-content {
   display: flex;
   /* float: center; */
@@ -164,22 +189,16 @@ li {
   flex-wrap: wrap;
   justify-content: space-around;
   /* margin: 12px;
-    padding: 10px; */
+  padding: 10px; */
 }
 
 .album-info {
   width: 300px;
+  background-color: black;
+  background: fixed;
   /* display: flex; */
   /* flex-wrap: wrap; */
   height: auto;
-}
-
-.info-content {
-  display: flex;
-  float: left;
-  width: auto;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
 }
 
 .project-content {
@@ -188,8 +207,15 @@ li {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 10px;
-  padding: 10px;
+}
+
+.project-info img {
+  width: 300px;
+  background-color: black;
+  background: fixed;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  height: auto;
 }
 
 .img-body {
