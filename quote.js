@@ -8,6 +8,9 @@ fetch(url)
     let randomQuote = data[random];
     let quote = randomQuote.text;
     let author = randomQuote.author;
+    if (!author) {
+      author = "Anonymous";
+    }
     let quoteText = document.getElementsByName("randomQuote");
     for (let i = 0; i < quoteText.length; i++) {
       quoteText[i].innerHTML = quote + " - " + author;

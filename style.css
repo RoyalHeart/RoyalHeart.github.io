@@ -5,7 +5,15 @@ body {
   color: rgb(80, 9, 35);
 }
 
+body a {
+  color: rgb(80, 9, 35);
+}
+
 .dark {
+  background-color: rgb(20, 12, 15);
+  color: lightyellow;
+}
+.dark a {
   background-color: rgb(20, 12, 15);
   color: lightyellow;
 }
@@ -115,13 +123,13 @@ header {
     /* justify-content: space-around; */
   }
 }
-a:link {
+/* a:link {
   color: black;
 }
 
 a:visited {
   color: black;
-}
+} */
 
 a:hover {
   color: hotpink;
