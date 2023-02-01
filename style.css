@@ -196,26 +196,26 @@ li {
   width: 300px;
   background-color: black;
   background: fixed;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
   height: auto;
 }
 
 .project-content {
   display: flex;
-  float: center;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
+}
+
+.project-info {
+  background-color: black;
+  background: fixed;
+  height: auto;
 }
 
 .project-info img {
-  width: 300px;
-  background-color: black;
-  background: fixed;
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  height: auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 25%;
 }
 
 .img-body {
