@@ -7,3 +7,8 @@ function responsiveNavigation() {
     x.className = "navigation";
   }
 }
+
+function toggleDarkMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}

@@ -2,6 +2,7 @@ body {
   font-family: sans-serif, Helvetica, Arial;
   background-color: rgb(20, 12, 15);
   margin: 0 50px;
+  color: lightyellow;
 }
 
 header {
@@ -74,8 +75,10 @@ header {
 @media screen and (max-width: 600px) {
   .navigation a {
     display: none;
+    transition-delay: 500ms;
   }
   .navigation a.icon {
+    transition-delay: 500ms;
     /* width: 20px; */
     /* height: 20px; */
     /* margin: 5px; */
@@ -92,7 +95,7 @@ header {
     display: flex;
     flex-direction: column;
     position: fixed;
-    right: 10px;
+    right: 50px;
     /* justify-content: flex-start; */
   }
   .navigation.responsive a {
@@ -100,7 +103,8 @@ header {
     /* width: 100px; */
     /* display: flex; */
     display: block;
-    text-align: right;
+    text-align: center;
+    transition-delay: 500ms;
     /* flex-direction: column; */
     /* justify-content: space-around; */
   }
