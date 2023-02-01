@@ -17,14 +17,13 @@
             <h1>Tam</h1>
             <div class="navigation" id="nav">
                 <a href="javascript:void(0);" class="icon" onclick="responsiveNavigation()">
-                    <i class=" fa fa-bars"></i>
+                    <i class="fa fa-bars"></i>
                 </a>
                 <a class="selected" href="index.html">Home</a>
                 <a href="page/about.html">About</a>
                 <a href="page/media.html">Media</a>
                 <a href="page/project.html">Projects</a>
             </div>
-        </div>
         </div>
     </ul>
     <h2>Nice to meet you :3</h2>
@@ -35,16 +34,10 @@
         You can see a random quote at the end of every page of my website like this:
     </h2>
     <h3 name="randomQuote"></h3>
+    <div class="toggle-theme" onclick="toggleDarkMode()">
+        <i class="fa fa-lightbulb"></i>
+    </div>
     <div class="footer" name="randomQuote"></div>
-    <script>
-        function myFunction() {
-            var x = document.getElementById("nav");
-            console.log(x);
-            if (x.className === "navigation") {
-                x.className += " responsive";
-            } else { x.className = "navigation"; }
-        }
-    </script>
 </body>
 
 </html>

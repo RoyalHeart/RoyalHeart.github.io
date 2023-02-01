@@ -1,7 +1,12 @@
 body {
   font-family: sans-serif, Helvetica, Arial;
-  background-color: rgb(20, 12, 15);
   margin: 0 50px;
+  background-color: rgb(227, 210, 216);
+  color: rgb(80, 9, 35);
+}
+
+.dark {
+  background-color: rgb(20, 12, 15);
   color: lightyellow;
 }
 
@@ -43,7 +48,7 @@ header {
   margin: 5px;
   width: 150px;
   text-align: center;
-  background-color: rgba(57, 3, 14, 0.5);
+  background-color: rgba(120, 6, 27, 0.66);
   border-radius: 30px;
   /* float: left;
   display: block;
@@ -75,10 +80,10 @@ header {
 @media screen and (max-width: 600px) {
   .navigation a {
     display: none;
-    transition-delay: 500ms;
+    transition: 500ms;
   }
   .navigation a.icon {
-    transition-delay: 500ms;
+    transition: 500ms;
     /* width: 20px; */
     /* height: 20px; */
     /* margin: 5px; */
@@ -90,12 +95,13 @@ header {
 
 @media screen and (max-width: 600px) {
   .navigation.responsive {
-    background-color: rgba(28, 2, 12, 0.76);
+    background-color: rgba(72, 7, 32, 0.338);
     float: right;
     display: flex;
     flex-direction: column;
     position: fixed;
     right: 50px;
+    border-radius: 15%;
     /* justify-content: flex-start; */
   }
   .navigation.responsive a {
@@ -104,17 +110,17 @@ header {
     /* display: flex; */
     display: block;
     text-align: center;
-    transition-delay: 500ms;
+    transition: 500ms;
     /* flex-direction: column; */
     /* justify-content: space-around; */
   }
 }
 a:link {
-  color: white;
+  color: black;
 }
 
 a:visited {
-  color: white;
+  color: black;
 }
 
 a:hover {
@@ -129,10 +135,6 @@ h1 {
   margin-bottom: 6px;
   color: rgb(201, 48, 124);
   font-size: 20px;
-}
-
-h2 {
-  color: lightyellow;
 }
 
 h3 {
@@ -206,6 +208,7 @@ li {
 .project-content {
   display: flex;
   flex-direction: row;
+  text-align: center;
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -249,7 +252,15 @@ button {
   width: 1200px;
   margin: 0px auto;
 }
-
+.toggle-theme {
+  background-color: rgba(120, 6, 27, 0.66);
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 15%;
+  right: 10px;
+  top: 90%;
+}
 .footer {
   position: fixed;
   left: 0;

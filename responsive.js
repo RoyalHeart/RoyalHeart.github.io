@@ -1,14 +1,11 @@
 function responsiveNavigation() {
   var x = document.getElementById("nav");
   console.log(x);
-  if (x.className === "navigation") {
-    x.className += " responsive";
-  } else {
-    x.className = "navigation";
-  }
+  x.classList.toggle("responsive");
 }
 
 function toggleDarkMode() {
   var element = document.body;
-  element.classList.toggle("dark-mode");
+  console.log(element);
+  element.classList.toggle("dark");
 }
