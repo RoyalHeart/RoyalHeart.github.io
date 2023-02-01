@@ -198,12 +198,10 @@ li {
 }
 .album-content {
   display: flex;
-  /* float: center; */
   flex-direction: row;
+  text-align: center;
   flex-wrap: wrap;
   justify-content: space-around;
-  /* margin: 12px;
-  padding: 10px; */
 }
 
 .album-info {
