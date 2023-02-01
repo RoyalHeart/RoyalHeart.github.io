@@ -26,7 +26,13 @@ header {
   text-align: left;
   font-size: 20px;
 }
-
+.head {
+  margin: auto;
+  margin-left: 0px;
+  /* margin-top: 5px; */
+  /* margin-bottom: 6px; */
+  height: 35px;
+}
 .flex-container {
   display: flex;
 }
@@ -88,10 +94,8 @@ header {
 @media screen and (max-width: 600px) {
   .navigation a {
     display: none;
-    transition: 500ms;
   }
   .navigation a.icon {
-    transition: 500ms;
     /* width: 20px; */
     /* height: 20px; */
     /* margin: 5px; */
@@ -118,7 +122,6 @@ header {
     /* display: flex; */
     display: block;
     text-align: center;
-    transition: 500ms;
     /* flex-direction: column; */
     /* justify-content: space-around; */
   }
