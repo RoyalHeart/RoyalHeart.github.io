@@ -199,6 +199,17 @@ li {
   height: auto;
   border-radius: 10%;
 }
+.resume-download {
+  background-color: rgba(139, 109, 113, 0.66);
+  border-radius: 10rem;
+  display: block;
+  width: 150px;
+  font-size: 20px;
+  margin: 0;
+  position: relative;
+  line-height: 50px;
+  text-align: center;
+}
 .album-content {
   display: flex;
   flex-direction: row;
