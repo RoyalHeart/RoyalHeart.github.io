@@ -7,9 +7,11 @@
     <link rel="icon" href="./Photos/Website Logo.png">
     <title>Tam's Page!!</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="shape/visual.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="quote.js"></script>
     <script src="responsive.js"></script>
+    <script src="shape/visual.js"></script>
 </head>
 
 <body>
@@ -27,14 +29,30 @@
             </div>
         </div>
     </ul>
-    <h2>Nice to meet you :3</h2>
-    <h2>
-        It's just website I made for fun and to learn a few things about front-end development
-    </h2>
-    <h2>
-        You can see a random quote at the end of every page of my website like this:
-    </h2>
-    <h3 name="randomQuote"></h3>
+    <div class="content">
+
+        <h2>Nice to meet you :3</h2>
+        <h2>
+            It's a website I made for fun and to learn a few things about front-end development
+        </h2>
+        <h2>
+            You can see a random quote at the end of every page of my website like this:
+        </h2>
+        <h3 name="randomQuote"></h3>
+        <h2>
+            To know more about me, check out the other pages
+        </h2>
+        <h2>
+            Here are some nice visuals you can enjoy :
+        </h2>
+        <div id="wrapper" data-configuration="1" data-roundness="1">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+    </div>
     <div class="toggle-theme" onclick="toggleDarkMode()">
         <i class="fa fa-lightbulb"></i>
     </div>
