@@ -1,0 +1,25 @@
+/* @import url("./all.min.css"); */
+#fish-wrapper {
+  /* position: relative; */
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black;
+}
+
+.fish {
+  z-index: 1;
+  color: rgb(100, 100, 209);
+  text-align: center;
+  /*   background: rgb(255,255,255,0.2); */
+  width: 50px;
+  height: 30px;
+  position: absolute;
+  transition-property: top, left;
+  transition-duration: 5000ms;
+  top: 50%;
+  left: 50%;
+  font-size: 30px;
+  transform: scaleX(-1);
+  translate: -20px -20px;
+}
