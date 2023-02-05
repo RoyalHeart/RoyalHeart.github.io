@@ -24,7 +24,6 @@ let prev = 0;
 
 setInterval(() => {
   const wrapper = document.getElementById("wrapper");
-  console.log(wrapper);
   const index = uniqueRand(0, combinations.length - 1, prev),
     combination = combinations[index];
   wrapper.dataset.configuration = combination.configuration;

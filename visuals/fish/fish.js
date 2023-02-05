@@ -1,28 +1,40 @@
-var prevX;
-var prevY;
-
-function moveFish(x, y) {
-  const fish = document.getElementById("fish");
+const fishElements = document.getElementsByName("fish");
+setTimeout(() => {
+  moveFish();
+}, 0);
+function moveFish() {
   const wrapper = document.getElementById("wrapper");
-  console.log(fish);
-  if (x > prevX) {
-    fish.style.transform = "scaleX(1)";
-  } else {
-    fish.style.transform = "scaleX(-1)";
-  }
-  setTimeout(() => {
-    console.log(x, y);
-    prevX = x;
-    prevY = y;
-    fish.style.left = `${x}px`;
-    fish.style.top = `${y}px`;
-  }, 100);
-}
-function random() {
   var x = Math.random() * wrapper.offsetWidth;
   var y = Math.random() * wrapper.offsetHeight;
-  moveFish(x, y);
+  for (let index = 0; index < fishElements.length; index++) {
+    let fishElement = fishElements[index];
+    let fish = new Fish(fishElement, x, y);
+    fish.move();
+  }
 }
-setInterval(() => {
-  random();
-}, 2000);
+class Fish {
+  constructor(fishElement, x, y) {
+    this.fishElement = fishElement;
+    this.x = x;
+    this.y = y;
+  }
+  move() {
+    const wrapper = document.getElementById("wrapper");
+    setInterval(() => {
+      this.prevX = this.x;
+      this.prevY = this.y;
+      this.x = Math.random() * wrapper.offsetWidth;
+      this.y = Math.random() * wrapper.offsetHeight;
+      this.flip();
+      this.fishElement.style.left = `${this.x}px`;
+      this.fishElement.style.top = `${this.y}px`;
+    }, Math.random() * 4000 + 4000);
+  }
+  flip() {
+    if (this.x > this.prevX) {
+      this.fishElement.style.transform = "scaleX(1)";
+    } else {
+      this.fishElement.style.transform = "scaleX(-1)";
+    }
+  }
+}
