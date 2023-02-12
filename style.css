@@ -1,6 +1,6 @@
 @import url("./visuals/fish/fish.css");
 @import url("./visuals/shapes/shapes.css");
-@import url("./visuals/fontawesome-free-6.2.1-web/css/all.css");
+@import url("./visuals/fontawesome-free-6.2.1-web/css/all.min.css");
 body {
   font-family: sans-serif, Helvetica, Arial;
   margin: 0 50px;
@@ -130,6 +130,9 @@ header {
   }
 }
 
+a {
+  text-decoration: none;
+}
 a:hover {
   color: hotpink;
   cursor: pointer;
