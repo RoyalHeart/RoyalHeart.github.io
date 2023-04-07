@@ -2,6 +2,7 @@ const fishElements = document.getElementsByName("fish");
 setTimeout(() => {
   moveFish();
 }, 0);
+
 function moveFish() {
   const wrapper = document.getElementById("wrapper");
   var x = Math.random() * wrapper.offsetWidth;
@@ -20,6 +21,14 @@ class Fish {
   }
   move() {
     const wrapper = document.getElementById("wrapper");
+    this.prevX = this.x;
+    this.prevY = this.y;
+    this.x = Math.random() * wrapper.offsetWidth;
+    this.y = Math.random() * wrapper.offsetHeight;
+    this.flip();
+    this.fishElement.style.left = `${this.x}px`;
+    this.fishElement.style.top = `${this.y}px`;
+
     setInterval(() => {
       this.prevX = this.x;
       this.prevY = this.y;
