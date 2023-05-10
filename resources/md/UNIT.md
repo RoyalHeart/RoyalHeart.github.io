@@ -215,8 +215,33 @@ the front end (support both Vietnamese and English)
 
 ## Week 13 (8/5/2023 - 12/5/2023)
 
-Research about Business Process Model Notation (BPMN). This helps the business and technical team (business analysts, technical developers, and business managers) work together easier to create a product that is suitable for both sides. BPMN has a process-oriented approach, which shows the user how many steps are needed, and how much time is allowed for each step. BPMN uses a Flow
-Chart to represent how a system will work with some level of detail.
+Research about [Business Process Model Notation (BPMN)](https://www.bpmn.org/).
+This helps the business and technical team (business analysts, technical
+developers, and business managers) work together easier to create a product that
+is suitable for both sides. BPMN has a process-oriented approach, which shows
+the user how many steps are needed, and how much time is allowed for each step.
+BPMN uses a Flow Chart to represent how a system will work with some level of
+detail.
+
+BPMN has four main elements:
+
+- Flow objects:
+  - Event: represent with a circle to denote something that happens.
+  - Activity: represent with a rounded-corner rectangle and describe a work that
+    can be done. Activity can be atomic (a single kind of work) or compound
+    (Sub-Processes)
+  - Gateway: represent with a diamond shape to indicate the forking and merging
+    of paths, depending on the conditions.
+- Connecting objects
+  - Connections
+- Swin lanes:
+  - Pool
+  - Lane
+  - Dark Pool
+- Artifacts
+  - Data objects
+  - Group
+  - Annotation
 
 ## Week 14 (15/5/2023 - 19/5/2023)
 
