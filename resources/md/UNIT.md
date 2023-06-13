@@ -3,6 +3,8 @@
 This blog will summarize my work experience and will be updated weekly. I
 started working as an Intern Java Developer at Unit Technology Corporation.
 
+---
+
 ## Week 1 (14/2/2023 - 17/2/2023)
 
 Setting up the environment to work with Java version 1.8:
@@ -28,6 +30,10 @@ Constructor with all or no arguments.
 
 Create a local [PostgreSQL](https://www.postgresql.org/) database to store book
 information.
+
+Later change to
+[SQLServer](https://www.microsoft.com/en-us/sql-server/sql-server-2022) because
+the company sometimes uses the Microsoft SQL server.
 
 Use [MirageSQL](https://github.com/mirage-sql/mirage) which integrates well with
 Spring framework to query data with
@@ -120,7 +126,9 @@ a folder hierarchy to represent the different web pages.
 ## Week 6 (20/3/2023 - 24/3/2023)
 
 Fix export with missing data. Edit the SQL file that gets the export information
-by adding CONCAT. Then learn how the logging system work (SLF4J).
+by adding CONCAT.
+
+Then learn how the logging system works [SLF4J](https://www.slf4j.org/).
 It uses the application properties to set the Log level for the root and each
 package if needed. There are five levels of log:
 
@@ -232,19 +240,60 @@ BPMN has four main elements:
     (Sub-Processes)
   - Gateway: represent with a diamond shape to indicate the forking and merging
     of paths, depending on the conditions.
-- Connecting objects
-  - Connections
+- Connecting objects:
+  - Sequence Flow: a solid line with an arrow, to show the order of activities
+  - Message Flow: dashed line with an open arrow, to show messages flow across
+    organizational boundaries (between pools)
+  - Association: it is used to associate an Artifact or text to a Flow Object
 - Swin lanes:
-  - Pool
-  - Lane
-  - Dark Pool
-- Artifacts
-  - Data objects
-  - Group
-  - Annotation
+  - Pool: to separate different organizations, and have many lanes.
+  - Lane: to organize and categorize activities within a pool according to function or role.
+- Artifacts:
+  - Data objects: which data is involved in the process.
+  - Group: represented with a rounded-corner rectangle and dashed lines. Group different activities but the flow remains unchanged.
+  - Annotation: give a clear and understandable impression.
+
+Learn about [Camunda 7](https://docs.camunda.org/manual/7.19/). It is a
+lightweight, open-source platform for Business Process Management (BPM).
+Camunda provides an application called Camunda Modeler to create BPMN, and a
+runtime script to create a server to start a process, give input to forms, and
+complete tasks. I have tried creating some simple processes and adding gateways to change the task route depending on the input.
 
 ## Week 14 (15/5/2023 - 19/5/2023)
 
+Keep learning about Camunda, focus on the API documents, how to start a process,
+change the step, and provide information for forms.
+
+The flow for one process/task is like this:
+
+1. Start the process, call the API /engine-rest/process/{key}/start
+2. Start the task
+3. Provide input for the task, and have someone as a maker or checker.
+4. Act on the task (Approve, Reject, Assign, Submit, Complete)
+5. Change step
+
+Attend a meeting to understand more about the system design. The main idea of
+the meeting is:
+
+- Authentication, authorization
+- Basic auth, Token, Session
+- Function permission, data permission
+- Process permission
+- Audit trail, audit logs
+
 ## Week 15 (22/5/2023 - 26/5/2023)
 
+Work with a team member to help clone and merge an old source to a new project.
+Modify the e-Form to check the user role.
+If the user has the role to input data into the form then enable all the fields, and allow the user signing.
+If the user only has the role to check and validate the form then the user can only see the form and sign in their part.
+
+Create new e-Forms that mimic the given Microsoft Word files (doc file). I have to create an Excel that list of all parameters that each form used. These parameters will be stored as a Java object and help transfer, store, and display information.
+
 ## Week 16 (29/5/2023 - 31/5/2023) - Last week of Intern
+
+This is the last week of my internship, I spent my time finishing up the tasks I had in the previous week.
+I complete all the e-Forms that were assigned to me in the previous week and received five new Doc files to transform to e-Form.
+I have noted all parameters used in the forms.
+Because I have limited time so I can only create an e-Form for only one file because the file is long (about 13 pages).
+The remaining files are assigned to another member of the division.
