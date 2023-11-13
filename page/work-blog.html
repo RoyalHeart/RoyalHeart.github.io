@@ -19,19 +19,23 @@
         setAppearance();
     </script>
     <div class="flex-container">
-        <img id="logo" src="../Photos/Website Logo Transparent.png">
+        <a href="/">
+            <img id="logo" src="../Photos/Website Logo Transparent.png">
+        </a>
         <div class="navigation" id="nav">
             <a href="javascript:void(0);" class="icon" onclick="responsiveNavigation()">
                 <i class="fa fa-bars"></i>
             </a>
             <a href="../index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="media.html">Media</a>
-            <a href="project.html">Projects</a>
+            <a href="../index.html#about">About</a>
+            <a href="../index.html#projects">Projects</a>
+            <a href="../index.html#media">Media</a>
             <a class="selected" href="work-blog.html">Work blog</a>
         </div>
     </div>
+    <div style="height: 50px;"></div>
     <div id="content"></div>
+    <div style="height: 50px;"></div>
 
     <script>
         var txtFile = new XMLHttpRequest();

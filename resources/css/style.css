@@ -146,22 +146,15 @@ h3 {
 .landing {
   margin-top: 50px;
 }
-.about {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.about > img {
-  min-width: 300px;
-}
+
 .about-text {
-  width: 60%;
+  width: 100%;
 }
 .contacts {
   display: flex;
-  float: left;
-  width: auto;
+  float: center;
+  width: 500px;
+  margin: auto;
   justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
@@ -170,6 +163,11 @@ h3 {
   border-radius: 10%;
 }
 .porfolio-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+  min-width: 300px;
   width: 25%;
   height: auto;
   border-radius: 10%;
@@ -186,27 +184,41 @@ h3 {
   text-align: center;
 }
 
+/* PROJECT */
 .project-content {
   display: flex;
   flex-direction: row;
   text-align: center;
   flex-grow: 1;
+  overflow: scroll;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  transition-duration: 4000ms;
+  transition-property: scroll;
+
+  /* display: flex;
+  flex-direction: row;
+  text-align: center;
+  flex-grow: 1;
   overflow: auto;
+  justify-content: space-around; */
 }
 .project-info {
   border-radius: 10%;
   margin: 10px;
-  width: 300px;
-  background-color: black;
-  background: fixed;
-  height: auto;
+  /* background-color: black; */
+  /* background: fixed; */
+  /* height: auto; */
 }
 .project-info img {
   width: 200px;
   height: 200px;
+  /* width: 50%;
+  height: 50%; */
   border-radius: 15%;
 }
 
+/* ALBUM */
 .album-content {
   display: flex;
   flex-direction: row;
