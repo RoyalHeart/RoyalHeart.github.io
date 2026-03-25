@@ -43,6 +43,12 @@ export default function HomePage() {
   ];
   const projects = [
     {
+      url: "https://yastream.tamthai.de",
+      alt: "yastream",
+      src: "https://yastream.tamthai.de/img/yas.png",
+      title: "yastream - Stremio addon",
+    },
+    {
       url: "https://beestudious.org",
       alt: "Beestudious website",
       src: "./images/project-thumbnail/Beestudious.png",
