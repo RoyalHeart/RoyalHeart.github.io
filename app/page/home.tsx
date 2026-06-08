@@ -189,17 +189,18 @@ export default function HomePage() {
         <div className="gap-2 lg:col-span-2 lg:flex lg:grow-2 lg:flex-col lg:justify-around">
           <Typography className="lg:pr-5" variant={"p"}>
             Hey, I am Tam from{" "}
-            <span className="bg-linear-to-r from-red-600 from-30% via-yellow-500 to-red-600 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-red-600 via-yellow-500 to-red-600 bg-size-[100%_2px] bg-position-[0%_100%] bg-no-repeat">
               Vietnam
             </span>
             , based in{" "}
-            <span className="bg-linear-to-r from-black via-red-600 to-yellow-500 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-black via-red-600 to-yellow-500 bg-size-[100%_2px] bg-position-[0%_100%] bg-no-repeat">
               Germany
             </span>
             . Currently I am a Master's Student in Computer Science at Technical
-            University of Darmstadt with a focus on Distributed Computing. I
+            University of Darmstadt with a focus on Distributed Computing.
+            {/* I
             have graduated with an excellent degree in Computer Science student
-            at Vietnamese-German University.
+            at Vietnamese-German University. */}
           </Typography>
           <div className="mt-2">
             <Typography variant={"h3"} className="text-center">
@@ -228,7 +229,11 @@ export default function HomePage() {
                   </Link>
                 );
               })}
-              <a className="bg-gray" href="/pdf/Resume.pdf" download="Resume">
+              <a
+                className="bg-gray"
+                href="https://raw.githubusercontent.com/hoangtamthai/resume/refs/heads/main/Resume.pdf"
+                download="Resume"
+              >
                 <Button
                   variant={"outline"}
                   className="flex h-12 justify-center"
